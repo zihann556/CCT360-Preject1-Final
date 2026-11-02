@@ -1,4 +1,6 @@
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -7,7 +9,6 @@ html {
 }
 
 body {
-    margin: 0;
     padding: 20px;
     background-color: #ffffff;
     color: #000000;
@@ -38,7 +39,6 @@ main,
 }
 
 .logo {
-    margin: 0;
     font-family: "Island Moments", cursive;
     font-size: 42px;
     font-weight: normal;
@@ -85,7 +85,6 @@ main,
 }
 
 .hero-main h2 {
-    margin-top: 0;
     font-size: 46px;
     font-weight: 600;
 }
@@ -93,16 +92,16 @@ main,
 .hero-main h3 {
     margin-top: 20px;
     margin-bottom: 10px;
-     font-family: "Island Moments", cursive;
+    font-family: "Island Moments", cursive;
     font-size: 48px;
     font-weight: normal;
 }
 
 .hero-main p {
     max-width: 520px;
-     font-family: "Island Moments", cursive;
-    font-size: 30px;
-    line-height: 1.5;
+    font-family: "Island Moments", cursive;
+    font-size: 27px;
+    line-height: 1.4;
 }
 
 .button {
@@ -123,8 +122,8 @@ main,
 }
 
 .about-me h2 {
-    margin-top: 0;
     font-size: 34px;
+    margin-bottom: 15px;
 }
 
 .about-me p {
@@ -140,7 +139,7 @@ main,
 }
 
 .featured-work > h2 {
-    margin-top: 0;
+    margin-bottom: 25px;
     font-size: 38px;
 }
 
@@ -172,17 +171,24 @@ main,
 }
 
 .card-content h3 {
-    margin-top: 0;
     margin-bottom: 20px;
     font-size: 24px;
     font-weight: 500;
 }
 
-.card-link {
+.card-link,
+.card-label {
     margin-top: auto;
     color: black;
-    text-decoration: none;
     font-size: 20px;
+}
+
+.card-link {
+    text-decoration: none;
+}
+
+.card-label {
+    opacity: 0.65;
 }
 
 .site-footer {
@@ -194,7 +200,6 @@ main,
 }
 
 .site-footer p {
-    margin: 0;
     font-size: 18px;
 }
 
@@ -227,22 +232,20 @@ main,
 }
 
 .detail-hero {
-    padding: 40px 40px 20px 40px;
+    padding: 40px 40px 20px;
 }
 
 .detail-hero h1 {
-    margin-top: 0;
     margin-bottom: 10px;
     font-size: 42px;
 }
 
 .detail-hero p {
-    margin: 0;
     font-size: 20px;
 }
 
 .detail-main {
-    padding: 20px 40px 40px 40px;
+    padding: 20px 40px 40px;
 }
 
 .overview {
@@ -258,13 +261,35 @@ main,
 }
 
 .overview-text h2 {
-    margin-top: 0;
+    margin-bottom: 15px;
     font-size: 32px;
 }
 
 .overview-text p {
+    margin-bottom: 15px;
     font-size: 19px;
     line-height: 1.55;
+}
+
+.challenge-solution {
+    margin-top: 35px;
+}
+
+.challenge-solution h2 {
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+.challenge-solution h3 {
+    margin-top: 18px;
+    margin-bottom: 5px;
+    font-size: 23px;
+}
+
+.challenge-solution p {
+    margin-bottom: 15px;
+    font-size: 18px;
+    line-height: 1.5;
 }
 
 .creative-process {
@@ -272,8 +297,8 @@ main,
 }
 
 .creative-process h2 {
-    font-size: 32px;
     margin-bottom: 20px;
+    font-size: 32px;
 }
 
 .creative-process h3 {
@@ -283,7 +308,6 @@ main,
 }
 
 .creative-process p {
-    margin-top: 0;
     margin-bottom: 15px;
     font-size: 18px;
     line-height: 1.5;
@@ -310,7 +334,6 @@ main,
 }
 
 .project-details h2 {
-    margin-top: 0;
     margin-bottom: 35px;
     font-size: 32px;
 }
@@ -320,17 +343,17 @@ main,
 }
 
 .detail-item h3 {
-    margin: 0 0 5px 0;
+    margin-bottom: 5px;
     font-size: 23px;
 }
 
 .detail-item p {
-    margin: 0;
     font-size: 19px;
     line-height: 1.35;
 }
 
 @media (max-width: 767px) {
+
     body {
         padding: 15px;
     }
@@ -372,6 +395,10 @@ main,
         font-size: 42px;
     }
 
+    .hero-main p {
+        font-size: 24px;
+    }
+
     .about-me {
         padding: 25px;
     }
@@ -400,7 +427,7 @@ main,
     }
 
     .detail-hero {
-        padding: 25px 25px 15px 25px;
+        padding: 25px 25px 15px;
     }
 
     .detail-hero h1 {
@@ -408,7 +435,7 @@ main,
     }
 
     .detail-main {
-        padding: 15px 25px 30px 25px;
+        padding: 15px 25px 30px;
     }
 
     .overview {
